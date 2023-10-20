@@ -10,8 +10,6 @@
 	"author": "Vijay Hardaha",
 	"license": "MIT",
 	"devDependencies": {
-		"cssnano": "^6.0.1",
-		"parcel": "^2.10.0",
-		"sass": "^1.69.4"
+		"parcel": "^2.10.0"
 	}
 }
