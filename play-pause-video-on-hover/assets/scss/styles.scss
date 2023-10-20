@@ -10,20 +10,18 @@ body {
 }
 
 .video-grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-	width: 992px;
-	margin: 30px auto;
+	margin-top: 30px;
 }
 
 .video-container {
 	align-self: flex-start;
 	background-color: #1a400e;
-	padding-bottom: 75%;
+	padding-bottom: 125%;
 	position: relative;
-	width: 48%;
+	width: 100%;
 	overflow: hidden;
+	display: flex;
+	margin-bottom: 30px;
 
 	.image-layer {
 		height: 100%;
@@ -47,6 +45,7 @@ body {
 		position: absolute;
 		width: 100%;
 		z-index: 2;
+		padding: 0 15px;
 
 		h2 {
 			color: #fff;

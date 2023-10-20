@@ -2,57 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play/Pause Video On Mouse Hover</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Play/Pause Video On Mouse Hover</title>
 
-    <!-- Include custom styles from styles.scss -->
-    <link rel="stylesheet" href="./assets/scss/styles.scss" />
+	<!-- Include custom styles from styles.scss -->
+	<link rel="stylesheet" href="./assets/scss/styles.scss" />
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="text-center mt-4">
-            <h1 class="fw-bolder">Play/Pause Video On Mouse Hover</h1>
-        </header>
+	<div class="container">
+		<!-- Header -->
+		<header class="text-center mt-4">
+			<h1 class="fw-bolder">Play/Pause Video On Mouse Hover</h1>
+		</header>
 
-        <!-- Main Content - Video Grid -->
-        <main class="video-grid">
-            <!-- Video Container 1 -->
-            <a href="#" class="video-container">
-                <div class="layer image-layer">
-                    <img src="./assets/images/image-01.jpeg" alt="Image 1">
-                </div>
-                <div class="layer h2-layer">
-                    <h2>Our Favorite</h2>
-                </div>
-                <video class="video" loop playsinline disableremoteplayback disablepictureinpicture>
-                    <source src="./assets/videos/video-01.mp4" type="video/mp4">
-                </video>
-            </a>
+		<!-- Main Content - Video Grid -->
+		<main class="video-grid row">
+			<div class="col-12 col-md-6">
+				<!-- Video Container 1 -->
+				<a href="#" class="video-container">
+					<div class="layer image-layer">
+						<img src="./assets/images/image-01.jpeg" alt="Image 1">
+					</div>
+					<div class="layer h2-layer">
+						<h2>Our Favorite</h2>
+					</div>
+					<video class="video" loop playsinline disableremoteplayback disablepictureinpicture>
+						<source src="./assets/videos/video-01.mp4" type="video/mp4">
+					</video>
+				</a>
+			</div>
 
-            <!-- Video Container 2 -->
-            <a href="#" class="video-container">
-                <div class="layer image-layer">
-                    <img src="./assets/images/image-02.jpeg" alt="Image 2">
-                </div>
-                <div class="layer h2-layer">
-                    <h2>Shop Now</h2>
-                </div>
-                <video class="video" loop playsinline disableremoteplayback disablepictureinpicture>
-                    <source src="./assets/videos/video-02.mp4" type="video/mp4">
-                </video>
-            </a>
-        </main>
+			<div class="col-12 col-md-6">
+				<!-- Video Container 2 -->
+				<a href="#" class="video-container">
+					<div class="layer image-layer">
+						<img src="./assets/images/image-02.jpeg" alt="Image 2">
+					</div>
+					<div class="layer h2-layer">
+						<h2>Shop Now</h2>
+					</div>
+					<video class="video" loop playsinline disableremoteplayback disablepictureinpicture>
+						<source src="./assets/videos/video-02.mp4" type="video/mp4">
+					</video>
+				</a>
+			</div>
+		</main>
 
-		<div class="text-center mt-4">
-			<a href="https://github.com/vijayhardaha/mini-adventures/tree/master/play-pause-video-on-hover" title="View source code">Source Code on Github</a>
+		<div class="text-center mb-4">
+			<a href="https://github.com/vijayhardaha/mini-adventures/tree/master/play-pause-video-on-hover"
+				title="View source code">Source Code on Github</a>
 		</div>
-    </div>
+	</div>
 
-    <!-- Include custom JavaScript from script.js -->
-    <script src="./assets/js/script.js"></script>
+	<!-- Include custom JavaScript from script.js -->
+	<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
