@@ -8,8 +8,10 @@
 		"build": "parcel build index.html --public-url https://play-pause-video-on-hover.netlify.app/"
 	},
 	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^5.0.0",
 		"@parcel/transformer-sass": "2.9.3",
-		"parcel": "^2.9.3"
+		"parcel": "^2.9.3",
+		"postcss": "^8.4.31"
 	},
 	"license": "MIT",
 	"author": "Vijay Hardaha",
