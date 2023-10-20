@@ -1,0 +1,29 @@
+{
+	"name": "generate-number-tables",
+	"version": "1.0.0",
+	"description": "This repository contains a set of tools for generating number tables from 1 to 20, up to 10 times, and provides the output in both text and HTML formats.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"build": "node index.js",
+		"lint": "eslint . --ext js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vijayhardaha/generate-number-tables.git"
+	},
+	"author": "Vijay Hardaha",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/vijayhardaha/generate-number-tables/issues"
+	},
+	"homepage": "https://github.com/vijayhardaha/generate-number-tables#readme",
+	"devDependencies": {
+		"eslint": "^7.32.0 || ^8.2.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.25.2"
+	},
+	"dependencies": {
+		"pretty": "^2.0.0"
+	}
+}
