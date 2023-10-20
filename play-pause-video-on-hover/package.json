@@ -12,5 +12,8 @@
 		"parcel": "^2.9.3"
 	},
 	"license": "MIT",
-	"author": "Vijay Hardaha"
+	"author": "Vijay Hardaha",
+	"dependencies": {
+		"bootstrap": "5.2.3"
+	}
 }
