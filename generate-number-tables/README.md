@@ -1,24 +1,18 @@
 # Generate Number Tables
 
-This repository contains tools for generating number tables from 1 to 20, up to 10 times, and provides the output in both text and HTML formats.
+A Project for generating number tables from 1 to 20, repeated up to 10 times, and provides the output in both text and HTML formats.
 
 ## Installation
 
 To get started, follow these steps:
 
-1. **Clone the Repository**: Clone this repository to your local machine using Git:
-
-   ```bash
-   git clone https://github.com/vijayhardaha/generate-number-tables.git
-   ```
-
-2. **Navigate to the Project Directory**: Change your working directory to the project folder:
+1. **Navigate to the Project Directory**: Change your working directory to the project folder:
 
    ```bash
    cd generate-number-tables
    ```
 
-3. **Install Dependencies**: Install the required dependencies using npm. This will install ESLint for linting:
+2. **Install Dependencies**: Install the required dependencies using npm. This will install ESLint for linting:
 
    ```bash
    npm install
