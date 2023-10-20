@@ -5,6 +5,7 @@ Welcome to My Mini Adventures, a repository filled with small, enjoyable coding 
 ## Project List
 
 - [**Generate Number Tables**](generate-number-tables/README.md) - A Project for generating number tables from 1 to 20, repeated up to 10 times, and provides the output in both text and HTML formats.
+- [**Play/Pause Video On Mouse Hover**](play-pause-video-on-hover/README.md) - This is a simple web page that demonstrates how to play/pause a video on mouse hover. It uses HTML, CSS (with Bootstrap), and JavaScript to achieve the effect.
 
 Feel free to explore these mini-adventures and dive into their respective READMEs for more details. Each project is housed in its own subdirectory, complete with step-by-step instructions, explanations, and sample code.
 
