@@ -20,16 +20,16 @@ parcel index.html
 
 ## Project Structure
 
--   `index.html`: The main HTML file that contains the structure of the web page.
--   `styles.scss`: The SCSS file containing the custom styles for the page.
--   `assets/`: Directory containing image and video assets.
--   `script.js`: JavaScript file that handles the play/pause functionality.
+- `index.html`: The main HTML file that contains the structure of the web page.
+- `styles.scss`: The SCSS file containing the custom styles for the page.
+- `assets/`: Directory containing image and video assets.
+- `script.js`: JavaScript file that handles the play/pause functionality.
 
 ## Technologies Used
 
--   HTML
--   CSS (Bootstrap)
--   JavaScript
+- HTML
+- CSS (Bootstrap)
+- JavaScript
 
 ## License
 
