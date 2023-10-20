@@ -2,6 +2,8 @@
 
 This is a simple web page that demonstrates how to play/pause a video on mouse hover. It uses HTML, CSS (with Bootstrap), and JavaScript to achieve the effect.
 
+View Demo: [https://play-pause-video-on-hover.netlify.app](https://play-pause-video-on-hover.netlify.app)
+
 ## Usage
 
 1. Clone this repository to your local machine.
