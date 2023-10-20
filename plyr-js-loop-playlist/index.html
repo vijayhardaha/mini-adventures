@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Metadata for the document -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>plyr-js-loop-playlist</title>
+
+	<!-- Preconnect and font stylesheet -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="./node_modules/plyr/dist/plyr.css" />
+	<link rel="stylesheet" href="./assets/css/style.scss" />
+</head>
+
+<body>
+	<div hidden>
+		<!-- Hidden SVG symbols for icons -->
+		<svg xmlns="http://www.w3.org/2000/svg">
+			<symbol id="play-icon">
+				<path
+					d="M15.562 8.1L3.87.225C3.052-.337 2 .225 2 1.125v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z">
+				</path>
+			</symbol>
+
+			<symbol id="trash-icon" viewBox="0 0 24 24" fill="currentColor">
+				<path d="M0 0h24v24H0V0z" fill="none" />
+				<path
+					d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z" />
+			</symbol>
+		</svg>
+	</div>
+	<main id="page">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="mt-5 mb-3 fw-bold">#plyr-js-loop-playlist</h1>
+					<p>It is a simple HTML project that showcases how to create a looped playlist of videos using
+						Plyr.js. This project is served using Parcel.js and demonstrates a straightforward way to create
+						a seamless video looping experience.</p>
+					<p><a href="https://github.com/vijayhardaha/mini-adventures/plyr-js-loop-playlist/"
+							title="View source code">Source code on Github</a></p>
+				</div>
+			</div>
+
+			<article class="content" id="main-content">
+				<!-- Video Cards -->
+				<div class="videos mt-4">
+					<div class="video">
+						<div class="ratio ratio-16x9 mb-2">
+							<img class="video-poster"
+								src="https://i.vimeocdn.com/video/637911320-9ece40848d398a031f356d53c7ab0767a40d4d3c40e041573893ffc511e84744-d_590x332"
+								alt="Short Version // Dynamic Developer Great Marketing Videos" />
+							<div class="video-actions">
+								<a href="#" class="video-delete">
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#trash-icon"></use>
+									</svg>
+								</a>
+								<a href="#" class="video-play" data-id="220009326"
+									data-src="https://vimeo.com/220009326"
+									data-title="Short Version // Dynamic Developer Great Marketing Videos">
+
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#play-icon"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<h4 class="video-title">
+							Short Version // Dynamic Developer Great Marketing Videos
+						</h4>
+					</div>
+					<div class="video">
+						<div class="ratio ratio-16x9 mb-2">
+							<img class="video-poster"
+								src="https://i.vimeocdn.com/video/932424810-389533953cdcdec3060ca1178e9c308c0f1e9260d39271134c20cd85520933c6-d_590x332"
+								alt="DisplayLink - Short corporate Intro for all online videos" />
+							<div class="video-actions">
+								<a href="#" class="video-delete">
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#trash-icon"></use>
+									</svg>
+								</a>
+								<a href="#" class="video-play" data-id="443078069"
+									data-src="https://vimeo.com/443078069"
+									data-title="DisplayLink - Short corporate Intro for all online videos">
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#play-icon"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<h4 class="video-title">DisplayLink - Short corporate Intro for all online videos</h4>
+					</div>
+					<div class="video">
+						<div class="ratio ratio-16x9 mb-2">
+							<img class="video-poster"
+								src="https://i.vimeocdn.com/video/542050005-1fd794d0222bb48fe49ce1be339fef46c91da41d3379aa50ec6922bf947a64f5-d_590x332"
+								alt="Short Sequence of Time Lapse Videos" />
+							<div class="video-actions">
+								<a href="#" class="video-delete">
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#trash-icon"></use>
+									</svg>
+								</a>
+								<a href="#" class="video-play" data-id="144254148"
+									data-src="https://vimeo.com/144254148"
+									data-title="Short Sequence of Time Lapse Videos">
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#play-icon"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<h4 class="video-title">Short Sequence of Time Lapse Videos</h4>
+					</div>
+					<div class="video">
+						<div class="ratio ratio-16x9 mb-2">
+							<img class="video-poster"
+								src="https://i.vimeocdn.com/video/525027980-83a445b39dc69773d8e06fc7e5e7dbe3162f0e7915ddb71d891c6669d9a1dbfe-d_590x332"
+								alt="Short Videos redo" />
+							<div class="video-actions">
+								<a href="#" class="video-delete">
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#trash-icon"></use>
+									</svg>
+								</a>
+								<a href="#" class="video-play" data-id="132389463"
+									data-src="https://vimeo.com/132389463" data-title="Short Videos redo">
+									<svg role="presentation" focusable="false">
+										<use xlink:href="#play-icon"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<h4 class="video-title">Short Videos redo</h4>
+					</div>
+				</div>
+			</article>
+
+			<div class="popup-wrap">
+				<div class="popup-content">
+					<a href="#" class="popup-close">&times;</a>
+					<div class="popup-box">
+						<video class="player" controls></video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- JavaScript Libraries -->
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./node_modules/plyr/dist/plyr.min.js"></script>
+	<!-- Project-specific JavaScript -->
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>
