@@ -4,11 +4,7 @@ Welcome to My Mini Adventures, a repository filled with small, enjoyable coding 
 
 ## Project List
 
-- [**Project 1: Space Invaders**](project1/README.md) - Embark on an intergalactic journey and defend the Earth from invading aliens in this classic game.
-- [**Project 2: Task Manager**](project2/README.md) - Create a simple task manager application to help you stay organized and productive.
-- [**Project 3: Crypto Price Tracker**](project3/README.md) - Build a tool to track cryptocurrency prices and stay updated on the latest trends.
-- [**Project 4: Weather Forecast**](project4/README.md) - Develop a weather forecast app that provides real-time weather information for your location.
-- [**Project 5: Fun Quiz App**](project5/README.md) - Challenge your friends with a fun and interactive quiz application.
+- [**Generate Number Tables**](generate-number-tables/README.md) - A Project for generating number tables from 1 to 20, repeated up to 10 times, and provides the output in both text and HTML formats.
 
 Feel free to explore these mini-adventures and dive into their respective READMEs for more details. Each project is housed in its own subdirectory, complete with step-by-step instructions, explanations, and sample code.
 
