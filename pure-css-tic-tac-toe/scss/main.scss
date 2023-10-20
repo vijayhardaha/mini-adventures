@@ -3,9 +3,6 @@
 // Load Variables
 @import "variables";
 
-// Normalize css
-@import "normalize";
-
 @mixin winner($key) {
 	@each $cell in $winCells {
 		#cb#{$key}-#{nth($cell,1)}:checked
