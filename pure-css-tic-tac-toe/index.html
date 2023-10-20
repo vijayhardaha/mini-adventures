@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Tic Tac Toe — Vijay Hardaha</title>
+    <meta name="title" content="Pure CSS Tic Tac Toe — Vijay Hardaha">
+    <meta name="description" content="A Tic-Tac-Toe game purely built on HTML & CSS. A Fun & Cool project to inspire some new developers so that they can learn new things and challenge themselves to build some complex things.">
+    <meta name="keywords" content="Tic Tac Toe,Tic-Tac-Toe,Vijay Hardaha,HTML,CSS,Javascript,plugin,Game,puzzle,Developers,100 days of code,project,">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Vijay Hardaha">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pure-css-tic-tac-toe.netlify.com/">
+    <meta property="og:title" content="Pure CSS Tic Tac Toe — Vijay Hardaha">
+    <meta property="og:description" content="A Tic-Tac-Toe game purely built on HTML & CSS. A Fun & Cool project to inspire some new developers so that they can learn new things and challenge themselves to build some complex things.">
+    <meta property="og:image" content="images/thumbnail.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pure-css-tic-tac-toe.netlify.com/">
+    <meta property="twitter:title" content="Pure CSS Tic Tac Toe — Vijay Hardaha">
+    <meta property="twitter:description" content="A Tic-Tac-Toe game purely built on HTML & CSS. A Fun & Cool project to inspire some new developers so that they can learn new things and challenge themselves to build some complex things.">
+    <meta property="twitter:image" content="images/thumbnail.jpg">
+
+    <!-- Favicons Tags -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.scss" />
+</head>
+
+<body>
+    <!-- .container starts -->
+    <div class="container">
+        <!-- .header starts -->
+        <div class="header">
+            <h1 class="title">Pure CSS Tic Tac Toe</h1>
+            <p>A Tic-Tac-Toe game purely built on HTML & CSS. A Fun & Cool project to inspire some new developers so that they can learn new things and challenge themselves to build some complex things.</p>
+
+            <div class="btns">
+                <a href="https://github.com/vijayhardaha/pure-css-tic-tac-toe" target="_blank" class="btn">View on Github</a>
+                <a href="https://twitter.com/intent/tweet?text=I%20love%20pure%20CSS%20Tic%20Tac%20Toe.%20Check%20it%20out.&url=https://pure-css-tic-tac-toe.netlify.com&hashtags=100DaysOfCode&via=vijayhardaha" target="_blank" class="btn">Share on Twitter</a>
+            </div>
+        </div><!-- .header ends -->
+
+        <!-- .section starts -->
+        <div class="section">
+            <!-- .left-section starts -->
+            <div class="left-section">
+                <h2>How to play?</h2>
+                <ul>
+                    <li>Use "Player A" & "Player B" button to change player turns.</li>
+                    <li>Use "Restart Game" button reset the game.</li>
+                    <li>Checkmark is for "Player A" & Crossmark is for "Player B".</li>
+                    <li>Note: After a player's move don't forget to switch the player turn.</li>
+                    <li>Enjoy !</li>
+                </ul>
+                <p>If you like 👍 or love ❤ this project then I'll appreciate a share on Twitter.</p>
+            </div><!-- .left-section ends -->
+
+            <!-- .right-section starts -->
+            <div class="right-section">
+                <form class="game" onsubmit="return false;">
+                    <div class="wrapper">
+                        <!-- Player A turn switch -->
+                        <input type="radio" name="player-rb" class="player-rb" id="player-a-rb" value="b" checked />
+                        <span class="btn player-btn player-a-btn">Player A</span>
+
+                        <!-- Player B turn switch -->
+                        <input type="radio" name="player-rb" class="player-rb" id="player-b-rb" value="b" />
+                        <span class="btn player-btn player-b-btn">Player B</span>
+
+                        <!-- Player turn labels -->
+                        <label class="turn turn-a">Player A it's your turn.</label>
+                        <label class="turn turn-b">Player B it's your turn.</label>
+
+                        <!-- .game-box starts -->
+                        <div class="game-box">
+                            <!-- Player A input cells -->
+                            <input type="checkbox" id="cba-1" class="cb cba" />
+                            <input type="checkbox" id="cba-2" class="cb cba" />
+                            <input type="checkbox" id="cba-3" class="cb cba" />
+                            <input type="checkbox" id="cba-4" class="cb cba" />
+                            <input type="checkbox" id="cba-5" class="cb cba" />
+                            <input type="checkbox" id="cba-6" class="cb cba" />
+                            <input type="checkbox" id="cba-7" class="cb cba" />
+                            <input type="checkbox" id="cba-8" class="cb cba" />
+                            <input type="checkbox" id="cba-9" class="cb cba" />
+
+                            <!-- Player B input cells -->
+                            <input type="checkbox" id="cbb-1" class="cb cbb" />
+                            <input type="checkbox" id="cbb-2" class="cb cbb" />
+                            <input type="checkbox" id="cbb-3" class="cb cbb" />
+                            <input type="checkbox" id="cbb-4" class="cb cbb" />
+                            <input type="checkbox" id="cbb-5" class="cb cbb" />
+                            <input type="checkbox" id="cbb-6" class="cb cbb" />
+                            <input type="checkbox" id="cbb-7" class="cb cbb" />
+                            <input type="checkbox" id="cbb-8" class="cb cbb" />
+                            <input type="checkbox" id="cbb-9" class="cb cbb" />
+
+                            <!-- Game cube box -->
+                            <div class="cube" id="cube-1"></div>
+                            <div class="cube" id="cube-2"></div>
+                            <div class="cube" id="cube-3"></div>
+                            <div class="cube" id="cube-4"></div>
+                            <div class="cube" id="cube-5"></div>
+                            <div class="cube" id="cube-6"></div>
+                            <div class="cube" id="cube-7"></div>
+                            <div class="cube" id="cube-8"></div>
+                            <div class="cube" id="cube-9"></div>
+
+                            <!-- Player A wins overlay -->
+                            <div class="overlay overlay-a">
+                                <h3>Congratulations!</h3>
+                                <h4>Player A Wins</h4>
+                            </div>
+
+                            <!-- Player B wins overlay -->
+                            <div class="overlay overlay-b">
+                                <h3>Congratulations!</h3>
+                                <h4>Player B Wins</h4>
+                            </div>
+                        </div><!-- .game-box ends -->
+
+                        <!-- Reset game button -->
+                        <div class="reset-game"><button class="btn" type="reset">Restart Game</button></div>
+                    </div>
+                </form>
+            </div><!-- .right-section ends -->
+        </div><!-- .section ends -->
+
+        <!-- .footer starts -->
+        <footer class="footer">
+            <p class="copyright">Made with <span>❤</span> by <a href="https://twitter.com/vijayhardaha" target="_blank">Vijay Hardaha</a> | <a href="https://paypal.me/vhardaha" target="_blank">Donate</a></p>
+        </footer><!-- .footer ends -->
+    </div><!-- .container ends -->
+</body>
+
+</html>

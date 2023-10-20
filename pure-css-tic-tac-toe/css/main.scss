@@ -1,0 +1,329 @@
+// Load Variables
+@import 'variables';
+
+// Normalize css
+@import 'normalize';
+
+@mixin winner($key) {
+    @each $cell in $winCells {
+        #cb#{$key}-#{nth($cell,1)}:checked
+            ~ #cb#{$key}-#{nth($cell,2)}:checked
+            ~ #cb#{$key}-#{nth($cell,3)}:checked
+            ~ .overlay-#{$key} {
+            opacity: 1;
+            visibility: visible;
+            z-index: 98;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $bg-color;
+    color: $white;
+    font-family: 'Marcellus SC', serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+p {
+    margin: 0 0 8px 0;
+}
+ul {
+    margin: 15px 0;
+    padding-left: 15px;
+    li {
+        line-height: 1.8;
+        margin: 0 0 10px 0;
+    }
+}
+a {
+    color: $white;
+    &:hover,
+    &:focus {
+        color: darken(#5457af, 30%);
+    }
+}
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 80px 15px 15px;
+    width: 1024px;
+    .header {
+        display: block;
+        margin: 0 0 80px 0;
+        width: 100%;
+        .title {
+            margin: 0 0 15px 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 22px;
+            line-height: 1.8;
+            text-align: center;
+        }
+        .btns {
+            display: block;
+            margin: 30px 0 0;
+            text-align: center;
+            .btn {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .section {
+        margin: 0 -15px;
+        &::after,
+        &::before {
+            clear: both;
+            content: '';
+            display: table;
+        }
+        .left-section,
+        .right-section {
+            float: left;
+            margin-bottom: 50px;
+            padding: 0 15px;
+            width: 50%;
+            @media only screen and (max-width: 992px) {
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .btn {
+        align-items: center;
+        background: $white;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        color: $bg-color;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        height: 40px;
+        justify-content: center;
+        letter-spacing: 3px;
+        line-height: 1;
+        margin: 0;
+        max-width: 100%;
+        min-width: 200px;
+        outline: 0;
+        overflow: hidden;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        width: auto;
+        &.alt {
+            background: #5457af;
+            color: $white;
+        }
+        &.player-btn {
+            @extend .alt;
+            min-width: 48%;
+            padding: 0 10px;
+        }
+        &:active {
+            top: -2px;
+        }
+    }
+    .game {
+        border: 2px dashed #5457af;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 100%;
+        min-height: 400px;
+        padding: 15px;
+        position: relative;
+        width: 400px;
+        & > .wrapper {
+            display: block;
+            position: relative;
+            width: 100%;
+        }
+        .player-rb {
+            cursor: pointer;
+            display: inline-block;
+            height: 40px;
+            left: 0;
+            margin: 0;
+            min-width: 49%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            &#player-b-rb {
+                left: 51%;
+            }
+            &:active {
+                & + .player-btn {
+                    top: -2px;
+                }
+            }
+            &:checked {
+                & + .player-btn {
+                    background: $white;
+                    color: $bg-color;
+                }
+                & ~ .game-box {
+                    opacity: 1;
+                }
+                &#player-a-rb {
+                    & ~ .game-box .cbb {
+                        visibility: hidden;
+                    }
+                    & ~ .turn-b {
+                        display: none;
+                    }
+                }
+                &#player-b-rb {
+                    & ~ .game-box .cba {
+                        visibility: hidden;
+                    }
+                    & ~ .turn-a {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .turn {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .game-box {
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 30px auto;
+        position: relative;
+        width: ($c-size + ($c-gap * 2)) * 3;
+        .cb {
+            cursor: pointer;
+            display: none;
+            height: $c-size;
+            left: 0;
+            margin: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            width: $c-size;
+            z-index: 10;
+        }
+        .cube {
+            align-items: center;
+            background: $white;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-flex;
+            height: $c-size;
+            justify-content: center;
+            margin: $c-gap;
+            position: relative;
+            width: $c-size;
+            &::after {
+                align-items: center;
+                color: $black;
+                display: flex;
+                font-size: 40px;
+                height: 100%;
+                justify-content: center;
+                left: 0;
+                line-height: 40px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+        @for $i from 1 through 9 {
+            .cb:checked {
+                z-index: -1;
+            }
+            #cba-#{$i}:checked ~ #cube-#{$i}::after {
+                content: '\2713';
+            }
+            #cbb-#{$i}:checked ~ #cube-#{$i}::after {
+                content: '\2717';
+            }
+        }
+        @for $i from 0 through 2 {
+            #cba-#{$i + 1},
+            #cbb-#{$i + 1} {
+                display: block;
+                left: ($c-size * $i) + ($c-gap * ((2 * $i) + 1));
+                top: $c-gap;
+            }
+            #cba-#{$i + 4},
+            #cbb-#{$i + 4} {
+                display: block;
+                left: ($c-size * $i) + ($c-gap * ((2 * $i) + 1));
+                top: ($c-size * 1) + ($c-gap * 3);
+            }
+            #cba-#{$i + 7},
+            #cbb-#{$i + 7} {
+                display: block;
+                left: ($c-size * $i) + ($c-gap * ((2 * $i) + 1));
+                top: ($c-size * 2) + ($c-gap * 5);
+            }
+        }
+        .overlay {
+            align-items: center;
+            background: $white;
+            border-radius: 4px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            visibility: hidden;
+            width: 100%;
+            z-index: -1;
+            h3,
+            h4 {
+                text-transform: uppercase;
+            }
+        }
+    }
+    .reset-game {
+        display: block;
+        margin: 0;
+        text-align: center;
+        .btn {
+            width: 100%;
+        }
+    }
+    @include winner('a');
+    @include winner('b');
+}
