@@ -1,24 +1,16 @@
 {
-    "name": "pure-css",
-    "version": "1.0.0",
-    "description": "A Tic-Tac-Toe game purely built on HTML & CSS. A Fun & Cool project to inspire some new developers so that they can learn new things and challenge themselves to build some complex things.",
-    "main": "index.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/vijayhardaha/pure-css-tic-tac-toe.git"
-    },
-    "keywords": [],
-    "author": "Vijay Hardaha",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/vijayhardaha/pure-css-tic-tac-toe/issues"
-    },
-    "homepage": "https://github.com/vijayhardaha/pure-css-tic-tac-toe#readme",
-    "devDependencies": {
-        "cssnano": "^4.1.10",
-        "sass": "^1.25.0"
-    }
+	"name": "pure-css",
+	"version": "1.0.0",
+	"description": "A Tic-Tac-Toe game purely built on HTML & CSS. A Fun & Cool project to inspire some new developers so that they can learn new things and challenge themselves to build some complex things.",
+	"scripts": {
+		"dev": "parcel index.html --no-source-maps --no-cache",
+		"prebuild": "rm -rf dist",
+		"build": "parcel build index.html --public-url https://pure-css-tic-tac-toe.netlify.app/"
+	},
+	"author": "Vijay Hardaha",
+	"license": "MIT",
+	"devDependencies": {
+		"cssnano": "^4.1.10",
+		"sass": "^1.25.0"
+	}
 }
