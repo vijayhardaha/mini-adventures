@@ -1,0 +1,25 @@
+{
+	"name": "hth",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"translate-it": "node scripts/translate.js",
+		"slug-it": "node scripts/slug.js",
+		"word-it": "node scripts/words.js"
+	},
+	"author": "Vijay Hardaha",
+	"license": "ISC",
+	"type": "module",
+	"devDependencies": {
+		"eslint": "^8.52.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.29.0"
+	},
+	"dependencies": {
+		"latinize": "^2.0.0",
+		"node-fetch": "^3.3.2",
+		"ora": "^7.0.1",
+		"slugify": "^1.6.6"
+	}
+}
