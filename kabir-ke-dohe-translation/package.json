@@ -1,7 +1,7 @@
 {
-	"name": "hth",
+	"name": "kabir-ke-dohe-translation",
 	"version": "1.0.0",
-	"description": "",
+	"description": "This repository contains a set of scripts that are designed to assist in the translation and manipulation of Kabir Ke Dohe, a collection of Hindi poetry written by the renowned poet Saint Kabir.",
 	"main": "index.js",
 	"scripts": {
 		"translate-it": "node scripts/translate.js",
@@ -9,7 +9,7 @@
 		"word-it": "node scripts/words.js"
 	},
 	"author": "Vijay Hardaha",
-	"license": "ISC",
+	"license": "MIT",
 	"type": "module",
 	"devDependencies": {
 		"eslint": "^8.52.0",
